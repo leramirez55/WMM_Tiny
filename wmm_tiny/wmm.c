@@ -151,7 +151,7 @@ void wmm_init(void)
 			if (m > 0U)
 			{
 				flnmj = (float)((n - m + 1U) * j) / (float)(n + m);
-				*(snorm + n + m * 13U) = *(snorm + n + (m - 1U) * 13U) * sqrt(flnmj);
+				*(snorm + n + m * 13U) = *(snorm + n + (m - 1U) * 13U) *  sqrtf(flnmj);
 				j = 1U;
 				c[n][m - 1U] = *(snorm + n + m * 13U) * c[n][m - 1U];
 				cd[n][m - 1U] = *(snorm + n + m * 13U) * cd[n][m - 1U];
